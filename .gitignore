@@ -1,0 +1,29 @@
+# ---- Extracted data (several GB, too big for GitHub; kept locally) ----
+dataextraction/*.csv
+dataextraction/*.parquet
+# ...except the small 50-row review sample
+!dataextraction/sample_50_matched.csv
+
+# ---- Secrets ----
+.env
+*.env
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# ---- Runtime output of the old scrapers ----
+reddit-universal-scraper/data/
+reddit-universal-scraper/logs/
+*.db
+*.sqlite
+*.log

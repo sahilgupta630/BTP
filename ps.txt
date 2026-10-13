@@ -1,0 +1,11 @@
+# Problem Statement: Automated Reddit Data Extraction Pipeline
+
+## Objective
+Develop an automated, asynchronous data pipeline capable of continuously scraping Reddit posts and comments based on specified keywords. The extracted data must be processed and output in a highly structured, machine-readable format suitable for downstream analysis or AI model integration.
+
+## Key Requirements
+1. Keyword-Driven Extraction: The system must dynamically search for and extract posts and nested comments across Reddit that match specific topics (e.g., "agentic AI").
+2. Advanced Filtering (Branch-Wise): The scraper must support Reddit's native filtering mechanisms (e.g., sort by 'Hot', 'New', 'Top', timeframes) and categorize data hierarchically (Subreddit -> Post -> Comment Thread).
+3. Asynchronous & Automated Execution: The pipeline must operate asynchronously to maximize I/O efficiency. It should run continuously or on an automated schedule without manual intervention.
+4. Zero-Cost Infrastructure: The architecture must avoid paid APIs or premium proxy services. It should implement rate-limit delays, Tor-based IP rotation, or open-source proxy pool scrapers to maintain a 100% free, continuous operation.
+5. Structured Data Output: Data output must be standardized into scalable formats like JSON or Parquet, ensuring all rich metadata (upvotes, timestamps, author details, nested replies) is preserved accurately.
