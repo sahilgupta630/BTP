@@ -1,0 +1,30 @@
+# Core
+pandas
+requests
+
+# Async
+aiohttp
+aiofiles
+
+# Dashboard
+streamlit
+
+# Export
+openpyxl
+pyarrow
+
+# REST API
+fastapi
+uvicorn
+
+# System & Analytics
+psutil
+duckdb
+defusedxml
+
+# 3-Tier Engine Fallbacks
+asyncpraw
+free-proxy
+stem
+aiohttp_socks
+playwright
